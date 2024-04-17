@@ -289,7 +289,7 @@ grpcio-testing==1.62.1
     # via feast (setup.py)
 grpcio-tools==1.62.1
     # via feast (setup.py)
-gunicorn==21.2.0
+gunicorn==22.0.0
     # via feast (setup.py)
 h11==0.14.0
     # via
