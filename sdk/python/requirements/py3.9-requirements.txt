@@ -48,7 +48,7 @@ fsspec==2024.3.1
     # via dask
 greenlet==3.0.3
     # via sqlalchemy
-gunicorn==21.2.0
+gunicorn==22.0.0
     # via feast (setup.py)
 h11==0.14.0
     # via uvicorn
