@@ -748,7 +748,7 @@ referencing==0.34.0
     #   jupyter-events
 regex==2023.12.25
     # via feast (setup.py)
-requests==2.31.0
+requests==2.32.0
     # via
     #   azure-core
     #   cachecontrol
