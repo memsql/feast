@@ -4,7 +4,7 @@ from typing import Dict
 
 from testcontainers.core.container import DockerContainer
 
-from ..online_store_creator import (
+from tests.integration.feature_repos.universal.online_store_creator import (
     OnlineStoreCreator,
 )
 
@@ -12,11 +12,15 @@ from ..online_store_creator import (
 class SingleStoreOnlineStoreCreator(OnlineStoreCreator):
     def __init__(self, project_name: str, **kwargs):
         super().__init__(project_name)
-        self.container = (DockerContainer("ghcr.io/singlestore-labs/singlestoredb-dev:latest")
+        self.container = (
+            DockerContainer("ghcr.io/singlestore-labs/singlestoredb-dev:latest")
             .with_exposed_ports(3306)
             .with_env("USER", "root")
             .with_env("ROOT_PASSWORD", "test")
-            .with_env("LICENSE_KEY", "BGIxODZiYTg1YWUxYjRlODRhYzRjMGFmYTA1OTkxYzgyAAAAAAAAAAABAAAAAAAAACgwNQIZANx4NIXJ7CWvKYYb3wIyRXxBY7fdAnLeSwIYLy2Q0jA124GAkl04yuGrD59Zpv85DVYXAA==")
+            .with_env(
+                "LICENSE_KEY",
+                "BGIxODZiYTg1YWUxYjRlODRhYzRjMGFmYTA1OTkxYzgyAAAAAAAAAAABAAAAAAAAACgwNQIZANx4NIXJ7CWvKYYb3wIyRXxBY7fdAnLeSwIYLy2Q0jA124GAkl04yuGrD59Zpv85DVYXAA==",
+            )
         )
 
     def create_online_store(self) -> Dict[str, str]:
