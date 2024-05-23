@@ -152,6 +152,8 @@ DELTA_REQUIRED = ["deltalake"]
 
 ELASTICSEARCH_REQUIRED = ["elasticsearch>=8.13.0"]
 
+SINGLESTORE_REQUIRED = ["singlestoredb"]
+
 CI_REQUIRED = (
     [
         "build",
@@ -214,6 +216,7 @@ CI_REQUIRED = (
     + DUCKDB_REQUIRED
     + DELTA_REQUIRED
     + ELASTICSEARCH_REQUIRED
+    + SINGLESTORE_REQUIRED
 )
 
 DOCS_REQUIRED = CI_REQUIRED
@@ -381,6 +384,7 @@ setup(
         "ikv": IKV_REQUIRED,
         "delta": DELTA_REQUIRED,
         "elasticsearch": ELASTICSEARCH_REQUIRED,
+        "singlestore": SINGLESTORE_REQUIRED,
     },
     include_package_data=True,
     license="Apache",

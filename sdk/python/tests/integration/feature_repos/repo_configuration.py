@@ -136,6 +136,7 @@ AVAILABLE_ONLINE_STORES: Dict[
     str, Tuple[Union[str, Dict[Any, Any]], Optional[Type[OnlineStoreCreator]]]
 ] = {
     "sqlite": ({"type": "sqlite"}, None),
+    "singlestore": ({"type": "singlestore", "user": "root", "password": "pass", "database": "test", "port": 3306}, None),
 }
 
 # Only configure Cloud DWH if running full integration tests

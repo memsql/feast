@@ -56,6 +56,7 @@ ONLINE_STORE_CLASS_FOR_TYPE = {
     "dynamodb": "feast.infra.online_stores.dynamodb.DynamoDBOnlineStore",
     "snowflake.online": "feast.infra.online_stores.snowflake.SnowflakeOnlineStore",
     "bigtable": "feast.infra.online_stores.bigtable.BigtableOnlineStore",
+    "singlestore": "feast.infra.online_stores.singlestore.SingleStoreOnlineStore",
     "postgres": "feast.infra.online_stores.contrib.postgres.PostgreSQLOnlineStore",
     "hbase": "feast.infra.online_stores.contrib.hbase_online_store.hbase.HbaseOnlineStore",
     "cassandra": "feast.infra.online_stores.contrib.cassandra_online_store.cassandra_online_store.CassandraOnlineStore",
