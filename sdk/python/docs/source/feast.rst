@@ -9,9 +9,11 @@ Subpackages
 
    feast.diff
    feast.dqm
+   feast.embedded_go
    feast.infra
    feast.loaders
    feast.protos
+   feast.transformation
    feast.ui
 
 Submodules
@@ -241,6 +243,14 @@ feast.proto\_json module
    :undoc-members:
    :show-inheritance:
 
+feast.registry\_server module
+-----------------------------
+
+.. automodule:: feast.registry_server
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 feast.repo\_config module
 -------------------------
 
@@ -261,14 +271,6 @@ feast.repo\_operations module
 -----------------------------
 
 .. automodule:: feast.repo_operations
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-feast.repo\_upgrade module
---------------------------
-
-.. automodule:: feast.repo_upgrade
    :members:
    :undoc-members:
    :show-inheritance:

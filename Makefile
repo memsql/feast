@@ -329,30 +329,16 @@ test-python-universal-cassandra-no-cloud-providers:
 				not test_snowflake" \
  			sdk/python/tests
 
- test-python-universal-singlestore-online:
+test-python-universal-singlestore-online:
 	PYTHONPATH='.' \
 		FULL_REPO_CONFIGS_MODULE=sdk.python.feast.infra.online_stores.contrib.singlestore_repo_configuration \
 		PYTEST_PLUGINS=sdk.python.tests.integration.feature_repos.universal.online_store.singlestore \
 		python -m pytest -n 8 --integration \
- 			-k "not test_universal_cli and \
- 				not test_go_feature_server and \
- 				not test_feature_logging and \
-				not test_reorder_columns and \
-				not test_logged_features_validation and \
-				not test_lambda_materialization_consistency and \
-				not test_offline_write and \
-				not test_push_features_to_offline_store and \
+			-k "not test_universal_cli and \
 				not gcs_registry and \
 				not s3_registry and \
- 				not test_universal_types and \
 				not test_snowflake" \
- 			sdk/python/tests
-
-test-singlestore:
-	PYTHONPATH='.' \
-		FULL_REPO_CONFIGS_MODULE=sdk.python.feast.infra.online_stores.contrib.singlestore_repo_configuration \
-		PYTEST_PLUGINS=sdk.python.tests.integration.feature_repos.universal.online_store.singlestore \
-		python -m pytest -v -n 8 --integration -k test_online_retrieval_with_event_timestamps sdk/python/tests/integration/online_store/test_universal_online.py
+			sdk/python/tests
 
 test-python-universal:
 	python -m pytest -n 8 --integration sdk/python/tests

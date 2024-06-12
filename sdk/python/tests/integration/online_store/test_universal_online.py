@@ -408,6 +408,7 @@ def setup_feature_store_universal_feature_views(
     fs: FeatureStore = environment.feature_store
     entities, datasets, data_sources = universal_data_sources
     feature_views = construct_universal_feature_views(data_sources)
+
     fs.apply([driver(), feature_views.driver, feature_views.global_fv])
 
     data = {

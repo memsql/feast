@@ -56,7 +56,6 @@ ONLINE_STORE_CLASS_FOR_TYPE = {
     "dynamodb": "feast.infra.online_stores.dynamodb.DynamoDBOnlineStore",
     "snowflake.online": "feast.infra.online_stores.snowflake.SnowflakeOnlineStore",
     "bigtable": "feast.infra.online_stores.bigtable.BigtableOnlineStore",
-    "singlestore": "feast.infra.online_stores.singlestore.SingleStoreOnlineStore",
     "postgres": "feast.infra.online_stores.contrib.postgres.PostgreSQLOnlineStore",
     "hbase": "feast.infra.online_stores.contrib.hbase_online_store.hbase.HbaseOnlineStore",
     "cassandra": "feast.infra.online_stores.contrib.cassandra_online_store.cassandra_online_store.CassandraOnlineStore",
@@ -65,6 +64,7 @@ ONLINE_STORE_CLASS_FOR_TYPE = {
     "hazelcast": "feast.infra.online_stores.contrib.hazelcast_online_store.hazelcast_online_store.HazelcastOnlineStore",
     "ikv": "feast.infra.online_stores.contrib.ikv_online_store.ikv.IKVOnlineStore",
     "elasticsearch": "feast.infra.online_stores.contrib.elasticsearch.ElasticSearchOnlineStore",
+    "singlestore": "feast.infra.online_stores.contrib.singlestore_online_store.singlestore.SingleStoreOnlineStore",
 }
 
 OFFLINE_STORE_CLASS_FOR_TYPE = {

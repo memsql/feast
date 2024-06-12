@@ -48,6 +48,7 @@ class SingleStoreOnlineStore(OnlineStore):
             host=online_store_config.host or "127.0.0.1",
             user=online_store_config.user or "test",
             password=online_store_config.password or "test",
+            database=online_store_config.database or "feast",
             port=online_store_config.port or 3306,
             autocommit=True,
         )
